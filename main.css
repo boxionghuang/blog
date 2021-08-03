@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?7kkyc2');
+    src: url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?7kkyc2') format('truetype'), url('fonts/icomoon.woff?7kkyc2') format('woff'), url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clickdown {
+    font-family: "icomoon";
+    font-size: x-large;
+}
+
+.glass {
+    font-family: "icomoon";
+    color: rgb(69, 69, 69);
+}
+
+body {
+    background: #00AEEF;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+body {
+    color: #eee;
+}
+
+.side-bar {
+    float: left;
+    width: 20%;
+    position: fixed;
+}
+
+.side-bar>* {
+    padding: 10px 15px;
+}
+
+.logo,
+.side-bar .nav a,
+.side-bar .tag-list a {
+    display: block;
+    padding: 5px;
+    color: #D3D3D3;
+    -webkit-transition: color 200ms;
+    -moz-transition: color 200ms;
+    -ms-transition: color 200ms;
+    -o-transition: color 200ms;
+    transition: color 200ms;
+}
+
+.side-bar .nav a:hover,
+.side-bar .tag-list a:hover {
+    color: rgb(0, 119, 185);
+    transform: scale(1.05) rotate(3deg);
+    transition: all 0.5s ease-out;
+    background-color: #454545
+}
+
+.side-bar .nav a {
+    font-weight: 700;
+}
+
+.main {
+    float: right;
+    width: 70%;
+    color: #454545;
+}
+
+.header .logo {
+    font-family: 'icomoon';
+    line-height: 1;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transform: scale(1.05) rotate(1.7deg);
+    color: #0076B8;
+    background-color: #454545
+}
+
+.logo:hover {
+    color: white;
+    transform: scale(0.85) rotate(-3deg);
+    transition: all 0.5s ease-out;
+}
+
+.header .intro {
+    font-weight: 100;
+}
+
+.article-list,
+.article {
+    margin-right: 30%;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.article-list .item {
+    margin-bottom: 25px;
+}
+
+.article-list .item .title,
+.article .title {
+    color: #454545;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.article-list .item .status,
+.article .status {
+    font-size: 13px;
+    color: #B4B4B4;
+}
+
+.article-list .item>*,
+.article>* {
+    margin: 10px 0;
+}
+
+.article1Content {
+    font-weight: 700;
+    color: #454545;
+}
+
+#menu-checkbox,
+#menu-toggle {
+    display: none;
+}

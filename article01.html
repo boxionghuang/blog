@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link media="(max-width:450px)" rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Boris' Blog-博客、吃饭、睡觉、Learning、Gym！</title>
+</head>
+
+<body>
+    <div class="side-bar">
+        <label id="menu-toggle" for="menu-checkbox">&#8226;&#8226;&#8226;</label>
+        <input id="menu-checkbox" type="checkbox">
+        <div class="header">
+            <a href="index.html" class="logo">Boris </a>
+            <div class="intro">
+                <p>我们悬挂于，一张自己编制的网</p>
+                <p>前面有阳光，背面有大海。<label class="glass"></label></p>
+            </div>
+
+        </div>
+        <!-- 导航 -->
+        <div class="nav">
+            <a href="#" class="item" onclick="aleme()">About me </a>
+            <a href="#" class="item" onclick=" alecontact()">Contact me </a>
+            <a href="#" class="item" onclick="thx()">Like me  </a>
+        </div>
+        <div class="tag-list">
+            <a href="http://v.youku.com/v_show/id_XNTA0OTEwNDIw.html" class="item">#English lover </a>
+            <a href="http://v.youku.com/v_show/id_XNTg1Njc5Nzcy.html" class="item">#Human B-box</a>
+            <a href="#" class="item">#Web Font-end development </a>
+        </div>
+    </div>
+    <!--主要界面-->
+    <div class="main">
+        <div class="article-list">
+
+
+            <div class="item">
+                <a href="article_2.html" class="title">自动驾驶的安全等级</a>
+                <div class="status">发布于:2021-2-18|阅读：22|标签：#自动驾驶 #ABS</div>
+                <div class="content">
+
+                    <p>SAE（Society of Automotive Engineers）美国汽车工程师协会，定义了自动驾驶的等级如下：</p>
+                    <p><b>Level 0</b> : 全人工开车，系统仅发出警告提示。</p>
+
+                    <p><b>Level 1</b> ： 辅助驾驶，自动系统操控[转向]或[加减速]，驾驶员必须随时准备接管（intervene）车辆。</p>
+                    <p>如情景A，驾驶员自行控制方向盘，自动系统油门从而保持一个设定的速度定速巡航（Cruise Control）。</p>
+                    <p>[定速巡航、ABS、ESP]</p>
+                    <p><b>Level 2</b> : 部分自动，自动系统操控[转向]和[加减速]，驾驶员必须随时准备接管车辆。</p>
+
+                    <p>驾驶员的手必须接触方向盘才能进入自动系统。</p>
+                    <p>[ ACC、主动车道保持、前后碰撞预警]</p>
+
+                    <p><b>Level 3</b> ： 有条件自动，有驾驶员情况下，特定条件的自动驾驶。</p>
+                    <p>驾驶员必须在车辆要求接管时，在一定时间内进行接管。</p>
+                    <p><b>Level 4</b> ： 不用驾驶员情况下，特定条件的自动驾驶。</p>
+
+                    <p><b>Level 5</b> ：无条件自动驾驶</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+    <script>
+        function aleme() {
+            alert("我是Boris，你好吗？");
+        };
+
+        function alecontact() {
+            alert("QQ: 825235211/  微信：hbox27");
+        };
+
+        function thx() {
+            alert("有朋自远方来，不亦乐乎！");
+        };
+    </script>
+</body>
+
+</html>

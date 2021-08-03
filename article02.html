@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link media="(max-width:450px)" rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Boris' Blog-博客、吃饭、睡觉、Learning、Gym！</title>
+</head>
+
+<body>
+    <div class="side-bar">
+        <label id="menu-toggle" for="menu-checkbox">&#8226;&#8226;&#8226;</label>
+        <input id="menu-checkbox" type="checkbox">
+        <div class="header">
+            <a href="index.html" class="logo">Boris </a>
+            <div class="intro">
+                <p>我们悬挂于，一张自己编制的网</p>
+                <p>前面有阳光，背面有大海。<label class="glass"></label></p>
+            </div>
+
+        </div>
+        <!-- 导航 -->
+        <div class="nav">
+            <a href="#" class="item" onclick="aleme()">About me </a>
+            <a href="#" class="item" onclick=" alecontact()">Contact me </a>
+            <a href="#" class="item" onclick="thx()">Like me  </a>
+        </div>
+        <div class="tag-list">
+            <a href="http://v.youku.com/v_show/id_XNTA0OTEwNDIw.html" class="item">#English lover </a>
+            <a href="http://v.youku.com/v_show/id_XNTg1Njc5Nzcy.html" class="item">#Human B-box</a>
+            <a href="#" class="item">#Web Font-end development </a>
+        </div>
+    </div>
+    <!--主要界面-->
+    <div class="main">
+        <div class="article-list">
+
+
+            <div class="item">
+                <a href="article_2.html" class="title">Docker基础</a>
+                <div class="status">发布于:2021-3-28|阅读：18|标签：#Linux #容器</div>
+                <div class="content">
+
+                    <p>Docker 是基于 Linux kernel 的虚拟化工具，仅需要极低的系统资源使用就提供了 强大的虚拟化、资源隔离能力。易于复制分享的优点，能够保证开发与部署环境的一致性。</p>
+                    <p> Docker 的基本结构包括：</p>
+
+                    <p><b>Docker 客户端和服务器（C/S）：</b></p>
+
+                    <p><b>Image</b>： Image（镜像）
+                    </p>
+                    <p>
+                        <b>Registry</b>： 默认的 Registry 是 Docker 公司提供的 Docker Hub， 你可以将 Docker Hub 类比于 GitHub。
+                    </p>
+                    <p>
+                        <b>Container</b>： 它通过操作相应的镜像提供一个执行环境。
+                    </p>
+                    <p>Docker使用基本流程：
+                        <ol>
+                            <li>查看镜像： docker images </li>
+                            <li> 创建容器运行镜像： docker container run [镜像名]</li>
+                            <li>以虚拟terminal的形式并添加交互式效果运行镜像： docker container run -it ubuntu bash </li>
+                            <li>终止运行的容器： docker container kill [containID] </li>
+
+                        </ol>
+
+                    </p>
+
+                    <p>常用命令：
+                        <ul>
+                            <li>查找镜像：docker search httpd</li>
+                            <li>获取一个新的镜像：docker pull ubuntu:13.10</li>
+                            <li>删除镜像: docker rmi hello-world</li>
+                        </ul>
+                        包含常用命令的网站：
+                        <p><a href="https://www.runoob.com/docker/docker-command-manual.html" style="color:seagreen;padding:30px;">Docker命令大全</a></p>
+                        <p>
+                            <a href="https://www.huaweicloud.com/articles/1995d352dd7228cac90cd8737f1f5c97.html" style="color:seagreen;padding:30px;">华为云docker常用命令</a>
+                        </p>
+                        <p>
+                            <a style="color:seagreen;padding:30px;" href=" https://dunwu.github.io/linux-tutorial/docker/docker-quickstart.html#%E5%9B%9B%E3%80%81%E5%88%B6%E4%BD%9C-docker-%E5%AE%B9%E5%99%A8 ">
+                                快速入门教程
+                            </a>
+                        </p>
+
+                    </p>
+                    <p>通过以下两种方式对镜像进行更改:
+                        <ol>
+                            <li>从已经创建的容器中更新镜像，并且提交这个镜像</li>
+                            <li>使用 Dockerfile 指令来创建一个新的镜像</li>
+                        </ol>
+                    </p>
+
+                    <p><b>容器操作:</b>
+                        <ul>
+                            <li>ps</li>
+                            <li>inspect</li>
+                            <li>top</li>
+                            <li>attach</li>
+                            <li>events</li>
+                            <li>logs</li>
+                            <li>wait</li>
+                            <li>export</li>
+                            <li>port</li>
+
+                        </ul>
+
+                    </p>
+                    <p> <b>容器生命周期管理:</b>
+                        <ul>
+                            <li>run</li>
+                            <li>start/stop/restart</li>
+                            <li>kill</li>
+                            <li>rm</li>
+                            <li>pause/unpause</li>
+                            <li>create</li>
+                            <li>exec</li>
+                        </ul>
+
+                    </p>
+                    <p><b>本地镜像管理</b>
+                        <ul>
+                            <li>images</li>
+                            <li>rmi</li>
+                            <li>tag</li>
+                            <li>build</li>
+                            <li>history</li>
+                            <li>save</li>
+                            <li>load</li>
+                            <li>import</li>
+                        </ul>
+
+                    </p>
+
+                    <p><b>镜像仓库:</b>
+                        <ul>
+                            <li>login</li>
+                            <li>pull</li>
+                            <li>push</li>
+                            <li>search</li>
+                        </ul>
+
+                    </p>
+                    <p>
+                        <b>info|version</b>
+
+                        <ul>
+                            <li>info</li>
+                            <li> version</li>
+                        </ul>
+
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+    <script>
+        function aleme() {
+            alert("我是Boris，你好吗？ ");
+        };
+
+        function alecontact() {
+            alert("QQ: 825235211/ 微信：hbox27 ");
+        };
+
+        function thx() {
+            alert("有朋自远方来，不亦乐乎！ ");
+        };
+    </script>
+</body>
+
+</html>

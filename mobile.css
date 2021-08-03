@@ -1,0 +1,46 @@
+.side-bar {
+    position: relative;
+    width: 100%;
+    float: none;
+}
+
+.main {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.article-list {
+    margin: 0;
+}
+
+.side-bar .nav,
+.side-bar .tag-list {
+    display: none;
+    text-align: center;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked~.nav,
+#menu-checkbox:checked~.tag-list {
+    display: block;
+}
+
+#menu-checkbox:checked~#dict {
+    margin-top: -73.3%;
+}
+
+#menu-toggle {
+    display: block;
+    position: absolute;
+    right: 2%;
+    padding: 0px 15px;
+    margin-top: 5%;
+    color: #4C9DC8;
+    background-color: whitesmoke;
+    border: 3px solid rgba(0, 115, 176, 0.7);
+    border-radius: 10px;
+}
